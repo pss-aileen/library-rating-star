@@ -1,11 +1,12 @@
 :root {
-  --rs-color: #000;
-  --rs-empty-color: #aaa;
+  --rs-color: gold;
+  --rs-empty-color: #eee;
 }
 
 .rs {
-  font-size: 16px;
+  /* font-size: 40px; */
   /* line-height: 1; */
+  color: var(--rs-color);
 }
 
 .rs-1 {
@@ -55,7 +56,7 @@
 }
 
 .rs-control::before {
-  content: '☆';
+  content: '★';
   top: 50%;
   transform: translateY(-50%);
   left: 0;
