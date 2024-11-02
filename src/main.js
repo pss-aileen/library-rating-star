@@ -3,6 +3,6 @@ import './style.css';
 import { RaitingStar } from '../lib/main';
 
 new RaitingStar({
-  filledColor: 'pink',
-  emptyColor: 'red',
+  // filledColor: 'pink',
+  // emptyColor: 'red',
 });
