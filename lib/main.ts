@@ -1,4 +1,4 @@
-class RatingStar {
+class Star {
   givenStars: number;
   totalStars: number;
   constructor(givenStars: number, totalStars: number) {
@@ -28,22 +28,27 @@ class RatingStar {
   }
 }
 
-const rating = new RatingStar(4, 5);
-rating.displayStar();
+// const rating = new RatingStar(4, 5);
+// rating.displayStar();
 
-const ratingStarDoms = document.querySelectorAll('.rs');
+// 名前はあとで、以下と上を変えること
+export class RaitingStar {
+  constructor() {
+    const ratingStarDoms = document.querySelectorAll('.rs');
 
-console.log(ratingStarDoms);
+    console.debug('Domの数:', ratingStarDoms);
 
-for (const dom of ratingStarDoms) {
-  if (dom.textContent !== null) {
-    const [givenStars, totalStars]: number[] = dom.textContent.split('/').map(Number);
-    console.log(givenStars, totalStars);
-    if (!givenStars || !totalStars) {
-      console.error('数値が入力されていません 3/5 のような形で指定してください:', dom);
+    for (const dom of ratingStarDoms) {
+      if (dom.textContent !== null) {
+        const [givenStars, totalStars]: number[] = dom.textContent.split('/').map(Number);
+        // console.log(givenStars, totalStars);
+        if (!givenStars || !totalStars) {
+          console.error('数値が入力されていません 3/5 のような形で指定してください:', dom);
+        }
+
+        const rating = new Star(givenStars, totalStars);
+        dom.textContent = rating.getRatingIcon();
+      }
     }
-
-    const rating = new RatingStar(givenStars, totalStars);
-    dom.textContent = rating.getRatingIcon();
   }
 }
