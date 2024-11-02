@@ -41,8 +41,18 @@ export class RaitingStar {
         let [givenStars, totalStars]: number[] = dom.textContent.split('/').map(Number);
         // console.debug(givenStars, totalStars);
 
-        if (!givenStars || !totalStars) {
+        if ((!givenStars && givenStars !== 0) || (!totalStars && totalStars !== 0)) {
           console.error('数値が入力されていません 3/5 のような形で指定してください:', dom);
+          return;
+        }
+
+        if (totalStars === 0) {
+          console.error('合計の数は1以上にしてください。');
+          return;
+        }
+
+        if (givenStars > totalStars) {
+          console.error('givenStarsはtotalStarsより大きい値を指定しないでください。');
           return;
         }
 
