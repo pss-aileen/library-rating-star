@@ -5,6 +5,7 @@
 
 .rs {
   font-size: 16px;
+  /* line-height: 1; */
 }
 
 .rs-1 {
@@ -47,7 +48,6 @@
   background-clip: text;
   color: transparent;
   position: relative;
-  line-height: 1;
 }
 
 .rs-empty {
@@ -56,7 +56,8 @@
 
 .rs-control::before {
   content: '☆';
-  top: 0;
+  top: 50%;
+  transform: translateY(-50%);
   left: 0;
   position: absolute;
   color: var(--rs-empty-color);
