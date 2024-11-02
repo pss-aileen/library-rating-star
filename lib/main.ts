@@ -3,6 +3,10 @@ import Star from './Star';
 import { isDecimal, customRoundToFirstDecimalPrace } from './utils';
 
 export class RaitingStar {
+  /*
+    HTML の rs の class属性を持つ要素を取得
+    テキストを解析し、それに応じた結果を返す
+  */
   constructor() {
     const ratingStarDoms = document.querySelectorAll('.rs');
 

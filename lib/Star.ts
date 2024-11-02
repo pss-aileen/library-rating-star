@@ -1,11 +1,19 @@
 import { isDecimal } from './utils';
 
+// もしかしてここは
+// Starクラス作って、
+// Emptyクラス
+// Fillクラス
+// 間クラス
+// を作ってわけられるのではないか？...とりあえず保留
+
 export default class Star {
   givenStars: number;
   totalStars: number;
   starDoms: HTMLElement[];
   constructor(givenStars: number, totalStars: number) {
-    // totalStars 点中、givenStart 点
+    // totalStars 点中、givenStars 点
+    // ( 4 / 5 ) = ( givenStars / totalStars )
     this.givenStars = givenStars;
     this.totalStars = totalStars;
     this.starDoms = [];
