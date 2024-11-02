@@ -72,8 +72,12 @@ export default class Star {
 
   appendSpan(parentDom: Element) {
     parentDom.textContent = '';
+
+    const fragment = document.createDocumentFragment();
     this.starDoms.map((dom) => {
-      parentDom.appendChild(dom);
+      fragment.appendChild(dom);
     });
+
+    parentDom.appendChild(fragment);
   }
 }
