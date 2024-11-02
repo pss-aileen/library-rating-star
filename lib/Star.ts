@@ -11,31 +11,29 @@ export default class Star {
   givenStars: number;
   totalStars: number;
   starDoms: HTMLElement[];
+  filledStarIcon: string;
+  emptyStarIcon: string;
   constructor(givenStars: number, totalStars: number) {
     // totalStars 点中、givenStars 点
     // ( 4 / 5 ) = ( givenStars / totalStars )
     this.givenStars = givenStars;
     this.totalStars = totalStars;
     this.starDoms = [];
+    this.filledStarIcon = '★';
+    this.emptyStarIcon = '★';
     this.wrapAllStars();
   }
 
   displayStar(): void {
-    const filledStarIcon = '★';
-    const emptyStarIcon = '☆';
-
-    const filledStar = filledStarIcon.repeat(this.givenStars);
-    const emptyStar = emptyStarIcon.repeat(this.totalStars - this.givenStars);
+    const filledStar = this.filledStarIcon.repeat(this.givenStars);
+    const emptyStar = this.emptyStarIcon.repeat(this.totalStars - this.givenStars);
 
     console.log(filledStar + emptyStar);
   }
 
   getRatingIcon(): string {
-    const filledStarIcon = '★';
-    const emptyStarIcon = '☆';
-
-    const filledStar = filledStarIcon.repeat(Math.ceil(this.givenStars));
-    const emptyStar = emptyStarIcon.repeat(this.totalStars - Math.ceil(this.givenStars));
+    const filledStar = this.filledStarIcon.repeat(Math.ceil(this.givenStars));
+    const emptyStar = this.emptyStarIcon.repeat(this.totalStars - Math.ceil(this.givenStars));
 
     return filledStar + emptyStar;
   }
