@@ -40,10 +40,21 @@ export class RaitingStar {
 
     for (const dom of ratingStarDoms) {
       if (dom.textContent !== null) {
-        const [givenStars, totalStars]: number[] = dom.textContent.split('/').map(Number);
-        // console.log(givenStars, totalStars);
+        let [givenStars, totalStars]: number[] = dom.textContent.split('/').map(Number);
+        console.debug(givenStars, totalStars);
+
         if (!givenStars || !totalStars) {
           console.error('数値が入力されていません 3/5 のような形で指定してください:', dom);
+          return;
+        }
+
+        if (isDecimal(totalStars)) {
+          console.error('合計数は整数で指定してください。', dom);
+          return;
+        }
+
+        if (isDecimal(givenStars)) {
+          givenStars = customRoundToFirstDecimalPrace(givenStars);
         }
 
         const rating = new Star(givenStars, totalStars);
@@ -51,4 +62,14 @@ export class RaitingStar {
       }
     }
   }
+}
+
+function isDecimal(number: number) {
+  return !Number.isInteger(number);
+}
+
+function customRoundToFirstDecimalPrace(number: number) {
+  // 小数点第二位を四捨五入
+  const roundedNumber = Math.round(number * 10) / 10;
+  return parseFloat(roundedNumber.toFixed(1));
 }
