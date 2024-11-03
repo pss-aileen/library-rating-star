@@ -29,6 +29,9 @@
     "type": "git",
     "url": "https://github.com/pss-aileen/library-rating-star"
   },
+  "bugs": {
+    "url": "https://github.com/pss-aileen/library-rating-star/issues"
+  },
   "keywords": [
     "rating",
     "star",
