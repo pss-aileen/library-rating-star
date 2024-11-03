@@ -6,6 +6,7 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Raiting Star</title>
+  <link rel="stylesheet" href="dist/ratingStar.css">
   <link rel="stylesheet" href="src/style.css">
 </head>
 
@@ -82,12 +83,17 @@
 
     <code class="block">&lt;div class=&quot;rs&quot;&gt;2/5&lt;/div&gt;</code>
     <code class="block"><pre>&lt;script&gt;
-  new RaitingStar();
+  new Rating();
 &lt;/script&gt;</pre></code>
   </section>
 
 
 
+  <script src="./dist/ratingStar.umd.js"></script>
+  <script>
+    const ratingStar = new RatingStar();
+    ratingStar.init();
+  </script>
   <script type="module" src="/src/main.js"></script>
 </body>
 

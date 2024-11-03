@@ -6,7 +6,6 @@
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](./LICENSE) file for details.
 
-
 🚧 [demo]()
 
 ---
@@ -36,13 +35,13 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](./LICE
 #### 🚧 Basic
 
 ```javascript
-new RaitingStar();
+new Rating();
 ```
 
 #### 🚧 Basic + Options
 
 ```javascript
-new RaitingStar({
+new Rating({
   filledColor: 'pink', // color
   emptyColor: 'red', // color
 });
