@@ -1,66 +1,54 @@
 # Raiting Star ⭐️
 
-0.1 刻みの星評価が作れるライブラリです。
+0.1 刻みの「★」評価が作れるライブラリです。
 
 ## License
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](./LICENSE) file for details.
 
 
-[demo]()
-
-## Codepen Examples
-
-- 1
-- 2
-- 3
+🚧 [demo]()
 
 ---
 
-## インストール
+## 🚧 Installation
 
-### Basic
+### 🚧 Basic
 
-CSS `<head>`
+#### 🚧 CSS
 
 ```html
 
 ```
 
-JavaScript `</body>`の前
+#### 🚧 JavaScript
+
+```html
 
 ```
 
-```
+### 🚧 package manager
 
-### package manager
+## 🚧 How to use it?
 
-`library-rating-star` をインストール
+### 🚧 1. JavaScript
 
-```bash
-npm install library-rating-star
-```
-
-## How to use it?
-
-### 1. スクリプト
-
-#### シンプル
+#### 🚧 Basic
 
 ```javascript
 new RaitingStar();
 ```
 
-#### オプション付き
+#### 🚧 Basic + Options
 
 ```javascript
 new RaitingStar({
-  filledColor: 'pink', // 色
-  emptyColor: 'red', // 色
+  filledColor: 'pink', // color
+  emptyColor: 'red', // color
 });
 ```
 
-### 2. HTML
+### 🚧 2. HTML
 
 ```html
 <span class="rs">2.5/5</span>
