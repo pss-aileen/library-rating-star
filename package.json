@@ -1,5 +1,5 @@
 {
-  "name": "library-rating-star",
+  "name": "@pss-aileen/rating-star",
   "version": "1.0.0",
   "description": "レーティングの「★」が簡単に表示できるライブラリ",
   "main": "./dist/ratingStar.umd.cjs",
