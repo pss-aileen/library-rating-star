@@ -6,48 +6,53 @@
 
 This project is licensed under the Apache License 2.0 - see the [LICENSE](./LICENSE) file for details.
 
-🚧 [demo]()
+<!-- 🚧 [demo]() -->
 
 ---
 
-## 🚧 Installation
+## Installation
 
-### 🚧 Basic
+### Basic
 
-#### 🚧 CSS
-
-```html
-
-```
-
-#### 🚧 JavaScript
+#### CSS
 
 ```html
-
+<link rel="stylesheet" href="https://unpkg.com/@pss-aileen/rating-star@1.0.1/dist/ratingStar.css" />
 ```
 
-### 🚧 package manager
+#### JavaScript
 
-## 🚧 How to use it?
-
-### 🚧 1. JavaScript
-
-#### 🚧 Basic
-
-```javascript
-new Rating();
+```html
+<script src="https://unpkg.com/@pss-aileen/rating-star@1.0.1/dist/ratingStar.umd.js"></script>
 ```
 
-#### 🚧 Basic + Options
+### package manager
+
+```sh
+npm i @pss-aileen/rating-star
+```
+
+## How to use it?
+
+### 1. JavaScript
+
+#### Basic
 
 ```javascript
-new Rating({
+const ratingStar = new RatingStar();
+ratingStar.init();
+```
+
+#### Basic + Options
+
+```javascript
+ratingStar.init({
   filledColor: 'pink', // color
   emptyColor: 'red', // color
 });
 ```
 
-### 🚧 2. HTML
+### 2. HTML
 
 ```html
 <span class="rs">2.5/5</span>
