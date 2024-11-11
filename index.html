@@ -14,7 +14,7 @@
 
 
   <section class="hero">
-    <h1>Rating Star★</h1>
+    <h1>Rating Star</h1>
 
     <p><span class="rs">2.2/5</span> <span class="rs">2.5/5</span> <span class="rs">2.8/5</span></p>
     <p><b>0.1</b> 刻みの星評価が作れるライブラリ</p>
@@ -62,28 +62,33 @@
     <h2>Feature</h2>
 
     <ul>
+      <li>0.1刻みの星評価を表示することができる</li>
       <li>CSSとJavaScript設置だけですぐにはじめられる</li>
       <li>テキストで作成しているので軽量</li>
       <li>テキストなのでフォントで星の形を変えられる</li>
     </ul>
   </section>
 
-
-
   <section class="getting-started">
     <h2>Getting Started</h2>
-    <h3>Grab</h3>
-    <a href="">download</a>
-    <a href="">View on GitHub</a>
+    <a href="https://github.com/pss-aileen/library-rating-star" target="_blank">View on GitHub</a>
+    <a href="https://www.npmjs.com/package/@pss-aileen/rating-star" target="_blank">View on npm</a>
     <h3>CDN</h3>
+
+    <p>🚧</p>
 
     <h3>npm install</h3>
 
+    <code class="block"><pre>npm i @pss-aileen/rating-star</pre></code>
+
     <h3>Initialize</h3>
 
-    <code class="block">&lt;div class=&quot;rs&quot;&gt;2/5&lt;/div&gt;</code>
+    <code class="block"><pre>&lt;div class=&quot;rs&quot;&gt;2/5&lt;/div&gt;
+&lt;span class=&quot;rs&quot;&gt;2/5&lt;/span&gt;</pre>
+    </code>
     <code class="block"><pre>&lt;script&gt;
-  new Rating();
+  const ratingStar = new RatingStar();
+  ratingStar.init();
 &lt;/script&gt;</pre></code>
   </section>
 

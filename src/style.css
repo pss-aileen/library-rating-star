@@ -64,7 +64,7 @@ code {
 
 .getting-started {
   max-width: 640px;
-  margin: 0 auto;
+  margin: 64px auto 0;
 
   h2 {
     text-align: center;
@@ -73,7 +73,7 @@ code {
 
 .feature {
   max-width: 640px;
-  margin: 0 auto;
+  margin: 64px auto 0;
 
   h2 {
     text-align: center;
@@ -82,7 +82,7 @@ code {
 
 .example {
   max-width: 640px;
-  margin: 0 auto;
+  margin: 64px auto 0;
 
   h2 {
     text-align: center;
