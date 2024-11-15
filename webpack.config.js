@@ -20,6 +20,10 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'ratingstar.bundle.js',
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new HtmlWebpackPlugin(
+    {
+      template: "./index.html"
+    }
+  )],
   mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
 };

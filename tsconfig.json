@@ -3,7 +3,9 @@
     "outDir": "./dist",
     "module": "None",
     "target": "ES6",
-    "declaration": true
+    "declaration": true,
+
+    "allowSyntheticDefaultImports": true
   },
   "include": ["lib/**/*"]
 }
