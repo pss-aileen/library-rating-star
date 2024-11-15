@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("Say Ho"),console.log("インデックスです。")})();
