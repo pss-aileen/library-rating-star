@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "None",
+    "target": "ES6",
+    "declaration": true
+  },
+  "include": ["lib/**/*"]
+}

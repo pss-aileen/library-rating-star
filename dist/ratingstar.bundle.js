@@ -1,1 +1,1 @@
-(()=>{"use strict";console.log("Say Ho"),console.log("インデックスです。")})();
+(()=>{"use strict";var e={461:(e,o)=>{Object.defineProperty(o,"__esModule",{value:!0}),o.default=()=>{console.log("Say Ho")}}},o={};(0,function r(t){var s=o[t];if(void 0!==s)return s.exports;var l=o[t]={exports:{}};return e[t](l,l.exports,r),l.exports}(461).default)(),console.log("インデックスです。はろはろ")})();
